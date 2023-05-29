@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8" />
+	<style>
+.txt2{
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    background: #f2f2f2;
+    margin: 0.5em 0;
+    line-height: 1.5;
+    height: 6em;
+}
+</style>
+</head>
+
+<body>
+	<div>
+		<h1 th:text="${title}"></h1>
+		<form method="get" action="#">
+			<p>コメント<br><textarea id="name" name="comment"  class="txt2" th:value="*{comment}" required></textarea></p>
+			<input type="submit" value="投稿">
+		</form>
+	</div>
+</body>
+
+</html>

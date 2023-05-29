@@ -1,0 +1,12 @@
+@charset "UTF-8";
+h1 {
+	line-height: 2;
+	text-align: center;
+}
+
+table td {
+	width: 200px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+</head>
+
+<body background="かわいい犬.jpg">
+	<p>
+	<input type="submit" value="検索">
+	<input type="text" name="search" th:value="*{search}">
+	</p>
+	<p>
+	<form action="/test2">
+		<input type="submit" value="J-POP">
+	</form>
+
+	<form action="/test1">
+		<input type="submit" value="K-POP">
+	</form>
+
+	<form action="/test2">
+		<input type="submit" value="バラード">
+	</form>
+	<form action="/test1">
+		<input type="submit" value="その他">
+	</form>
+	</p>
+
+	<table>
+
+		<tr th:each="res : ${dbList}">
+			<td th:text="${res.name}">名前</td>
+			<td th:text="${res.comment}">コメント</td>
+			<td th:text="${res.attime}">時間</td>
+		</tr>
+
+	</table>
+</body>
+
+</html>

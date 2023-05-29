@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+h1{
+	color: #2589d0;	
+	text-align: center;
+	
+}
+.box {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: .5em 1.5em 1em;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+}
+
+.box >.name {
+    margin-bottom: .5em;
+    color: #2589d0;
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+.box > .comment {
+    margin: 0;
+    color: #333;
+}
+.box > .time{
+	 text-align : right;
+
+
+}
+
