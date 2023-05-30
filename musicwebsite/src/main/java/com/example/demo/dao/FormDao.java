@@ -49,7 +49,7 @@ public class FormDao {
 	
 	
 	public List<EntForm> genre1Db() {
-		String sql = "SELECT * FROM form WHERE genre='J-POP'";
+		String sql = "SELECT * FROM form WHERE "+"genre='J-POP'";
 
 		List<Map<String, Object>> resultDb1 = db.queryForList(sql);
 		List<EntForm> resultDb2 = new ArrayList<EntForm>();

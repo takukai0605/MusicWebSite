@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
 	<title>Hello</title>
-	<meta charset="utf-8"/>
+	<meta charset="utf-8" />
 	<link rel="stylesheet" th:href="@{/view.css}">
 </head>
 
 <body>
 	<h1 th:text="${title}"></h1>
 
-		<div class="box" th:each="res : ${dbList}">
-			<p class="name" th:text="${res.name}">name</p>
-			<p class="comment" th:text="${res.comment}">コメント</p>
-			<p class="time" th:text="${res.attime}">12:00</p>
-		</div>
-		
-		
-	
-</body>
+	<div class="box" th:each="res : ${dbList}">
+		<p class="name" th:text="${res.name}">name</p>
+		<p class="comment" th:text="${res.comment}">コメント</p>
+		<p class="time" th:text="${res.attime}">12:00</p>
+	</div>
 
+	<form action="/comment">
+		<input type="submit" value="コメントする">
+	</form>
+
+</body>

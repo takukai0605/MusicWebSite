@@ -32,4 +32,6 @@ public class SerchController {
 	public String view() {
 		return "comment";
 	}
+	
+	
 }

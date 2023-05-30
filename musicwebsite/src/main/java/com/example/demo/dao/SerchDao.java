@@ -35,6 +35,7 @@ public class SerchDao {
 		SerchEnt entformdb = new SerchEnt();
 		//id、nameのデータをentformdbに移す
 		entformdb.setUser_id((String)result1.get("user_id"));
+		entformdb.setBoard((String)result1.get("board"));
 		entformdb.setName((String)result1.get("name"));
 		entformdb.setGenre((String)result1.get("genre"));
 		entformdb.setComment((String)result1.get("comment"));
@@ -45,4 +46,5 @@ public class SerchDao {
 		//Controllerに渡す
 		return resultDb2;
 		}
+	
 }

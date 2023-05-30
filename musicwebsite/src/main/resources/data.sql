@@ -1,4 +1,10 @@
 INSERT INTO users (name,password) VALUES ('tanaka','aaa');
-INSERT INTO form (user_id,name,genre,comment,attime) VALUES ('matuki0401','まっちゃん','バラード','こんにちは', CURRENT_TIMESTAMP);
-INSERT INTO form (user_id,name,genre,comment,attime) VALUES ('takemoto0501','たけちゃん','J-POP','こんにちは', CURRENT_TIMESTAMP);
-INSERT INTO form (user_id,name,genre,comment,attime) VALUES ('umedada0601','うめちゃん','K-POP','こんにちは', CURRENT_TIMESTAMP);
+INSERT INTO form (board,user_id,name,genre,comment,attime) VALUES ('名もなき掲示板１','matuki0401','まっちゃん','バラード','こんにちは', CURRENT_TIMESTAMP);
+INSERT INTO form (board,user_id,name,genre,comment,attime) VALUES ('名もなき掲示板１','takemoto0501','たけちゃん','J-POP','こんにちは', CURRENT_TIMESTAMP);
+INSERT INTO form (board,user_id,name,genre,comment,attime) VALUES ('名もなき掲示板１','umedada0601','うめちゃん','K-POP','こんにちは', CURRENT_TIMESTAMP);
+INSERT INTO form (board,user_id,name,genre,comment,attime) VALUES ('名もなき掲示板２','matuki0401','まっちゃん','バラード','こんにちは', CURRENT_TIMESTAMP);
+INSERT INTO form (board,user_id,name,genre,comment,attime) VALUES ('名もなき掲示板２','takemoto0501','たけちゃん','J-POP','こんにちは', CURRENT_TIMESTAMP);
+INSERT INTO form (board,user_id,name,genre,comment,attime) VALUES ('名もなき掲示板２','umedada0601','うめちゃん','K-POP','こんにちは', CURRENT_TIMESTAMP);
+INSERT INTO form (board,user_id,name,genre,comment,attime) VALUES ('名もなき掲示板３','matuki0401','まっちゃん','バラード','こんにちは', CURRENT_TIMESTAMP);
+INSERT INTO form (board,user_id,name,genre,comment,attime) VALUES ('名もなき掲示板３','takemoto0501','たけちゃん','J-POP','こんにちは', CURRENT_TIMESTAMP);
+INSERT INTO form (board,user_id,name,genre,comment,attime) VALUES ('名もなき掲示板３','umedada0601','うめちゃん','K-POP','こんにちは', CURRENT_TIMESTAMP);

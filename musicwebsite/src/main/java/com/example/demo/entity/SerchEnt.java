@@ -5,6 +5,7 @@ public class SerchEnt {
 	private String name;
 	private String genre;
 	private String comment;
+	private String board;
 	private java.sql.Timestamp attime;
 	
 	public SerchEnt() {}
@@ -38,7 +39,12 @@ public class SerchEnt {
 	public void setComment(String comment) {
 		this.comment= comment;
 	}
-	
+	public String getBoard() {
+		return board;
+	}
+	public void setBoard(String board) {
+		this.board= board;
+	}
 	public java.sql.Timestamp getAttime() {
 		return attime;
 	}
